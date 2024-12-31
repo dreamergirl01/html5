@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio & Video</title>
+    <style>
+        body, h1{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .hero{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* background-color: rgba(0, 0, 0, 0.3); */
+            background-image: linear-gradient(to right, rgba(0, 242, 96, 0.3), rgba(5, 117, 230, 0.3));
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 3em;
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        .video-bg{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            min-height: 100%;
+            min-width: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <!-- <audio src="audio/ordinary-confession.mp3" controls></audio> -->
+
+    <figure>
+        <figcaption>
+            Ordinary Confession
+        </figcaption>
+        <audio controls loop muted>
+            <source src="audio/ordinary-confession.mp3" type="audio/mpeg">
+            <source src="#" type="audio/ogg" type="audio/ogg">
+        </audio>
+    </figure>
+
+    <!-- <video src="video/video1.mp4" width="200px" controls></video> -->
+
+    <!-- <figure>
+        <figcaption>
+            hmm
+        </figcaption>
+        <video controls width="200px">
+            <source src="video/video1.mp4" type="video/mp4">
+            browser tidak mendukung tag <code>video</code>
+        </video>
+    </figure> -->
+
+    <div class="hero">
+        <h1>Welcome to The Dark World</h1>
+        <video class="video-bg" src="video/video1.mp4" autoplay muted loop></video>
+    </div>
+</body>
+</html>
