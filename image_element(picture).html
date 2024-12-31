@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Element</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.125em;
+            line-height: 1.6;
+            color: #333;
+            padding: 2em;
+        }
+        .hero{
+            display: grid;
+            grid-gap: 2em;
+            align-items: center;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        @media (min-width: 960px){
+            .hero{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Welcome to The Dark World</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          nostrum consectetur, vel impedit ad sapiente accusamus esse inventore
+          veritatis enim necessitatibus? Officia, enim veniam! Incidunt minus,
+          voluptatem fugit dolorum mollitia magnam quae asperiores explicabo
+          quas? Repellendus nisi illum iste quaerat nam possimus ut architecto
+          illo aperiam explicabo dolorem eligendi expedita sapiente voluptatem
+          nulla, maxime ipsum culpa aspernatur accusantium deleniti esse dolor
+          sunt recusandae nesciunt? In fugiat provident recusandae, quod ducimus
+          accusantium dignissimos quisquam voluptatibus. Maxime assumenda atque
+          fugit corrupti a quod, nemo nihil repudiandae itaque harum reiciendis
+          iusto ea hic, provident possimus, magni impedit architecto sapiente
+          sequi dolor ratione fuga!
+        </p>
+      </div>
+      <picture>
+        <source media="(min-width: 960px)" srcset="img2/candle2.jpg" sizes="50vw">
+        <source media="(min-width: 600px)" srcset="img2/candle1.jpg">
+        <img src="img2/candle3.jpg" alt="candle" />
+      </picture>
+    </div>
+  </body>
+</html>
